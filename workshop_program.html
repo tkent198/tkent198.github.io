@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Your description goes here" />
+	<meta name="keywords" content="maths, weather, climate, the world" />
+	<meta name="author" content="Tom Kent" />
+	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="origo.css" title="Origo" media="all" />
+	<title>modRSW workshop</title>
+	<style>
+	table, th, td {
+	  border: 1px solid black;
+	  border-collapse: collapse;
+	}
+	th, td {
+	  padding: 5px;
+	}
+	th {
+	  text-align: left;
+	}
+	</style>
+</head>
+
+<body class="light blue smaller freestyle01">
+<div id="layout">
+ 
+	<div class="row smaller">
+		<div class="col c5 smaller">
+			<h1><a href="workshop.html">DA Workshop - 16/17 May 2019</a></h1>
+		</div>
+		
+		<div class="col c7 aligncenter">
+			<p class="slogan">For current and potential users of the 'modRSW' model for data assimilation research </p>
+		</div>
+	</div>
+  
+	<div class="row">
+		<div class="col c12 aligncenter">
+			<img src="images/valpo.jpg" width="960" height="240" alt="" />
+		</div>
+	</div>
+ 
+	<div class="row">
+		<div class="col c2 alignleft">
+			<ul class="menu">
+			<li><a href="workshop.html">Home</a></li>
+			<li><a href="workshop_program.html">Program</a></li>
+		</ul>
+		</div>
+ 
+		<div class="col c8">
+			<h1>Schedule</h1>
+			<p>Abstracts and slides follow below -- click on talk titles.</p>
+			<h3>Thur 16 May 2019: Morning</h3> 
+
+			<table style="width:100%">		 
+			  <tr>
+			    <td>09:00 - 09:30</td>
+			    <td>Welcome and introduction</td>
+			  </tr>
+			  <tr>
+			    <td>09:30 - 10:00</td>
+			    <td>Tom Kent: <b><a href="#tom">The modRSW model -- physical basis, numerics, and dynamics</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>10:00 - 10:30</td>
+			    <td>Gordon Inverarity: <b><a href="#gordon">Ensemble Kalman filter configuration and tuning with the modRSW model</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>10:30 - 11:00</td>
+			    <td>Patrick Raanes: <b><a href="#patrick">EnKF -- FAQ</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>11:00 - 11:30</td>
+			    <td><b>Coffee break</b></td>
+			  </tr>
+			  <tr>
+			    <td>11:30 - 12:00</td>
+			    <td>Ross Bannister: <b><a href="#ross">Introducing the 'ABC model' for the efficient study of convective-scale data assimilation techniques</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>12:00 - 12:30</td>
+			    <td>Žiga Zaplotnik: <b><a href="#ziga">MADDAM - Moist Atmosphere Dynamics Data Assimilation Model</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>12:30 - 13:00</td>
+			    <td>Zak Bell: <b><a href="#zak">Accounting for observation uncertainty due to unresolved scales in data assimilation</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>13:00 - 14:00</td>
+			    <td><b>Lunch</b></td>
+			  </tr>
+
+			</table>
+			<br>
+
+			<h3>Thur 16 May 2019: Afternoon</h3> 
+
+			<table style="width:100%">		 
+			  <tr>
+			    <td>14:00 - 15:30</td>
+			    <td><b><a href ="https://github.com/tkent198/modRSW_EnKF" target="_blank">Practical activity with the modRSW model</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>15:30 - 16:00</td>
+			    <td><b>Coffee break</b></td>
+			  </tr>
+			  <tr>
+			    <td>16:00 - 16:30</td>
+			    <td>Alison Fowler: <b><a href="#alison">Data compression in the presence of correlated observation errors</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>16:30 - 17:00</td>
+			    <td>Javier Amezcua: <b><a href="#javier">Time structures in the model error of partially resolved dynamical systems</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>From 19:00</td>
+			    <td><b>Workshop dinner</b></td>
+			  </tr>
+			</table>
+			<br>
+
+			<h3>Friday 17 May 2019: Morning</h3> 
+
+			<table style="width:100%">		 
+			  <tr>
+			    <td>09:00 - 09:30</td>
+			    <td>Luca Cantarello: <b><a href="#luca">A revised version of the modRSW model to facilitate research in satellite data assimilation</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>09:30 - 10:00</td>
+			    <td>Raphael Kriegmair: <b><a href="#raphael">Representing unresolved scales in the modRSW model with a neural network</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>10:00 - 10:30</td>
+			    <td>Steven Boeing: <b><a href="#steef">Lagrangian modelling of the atmosphere: opportunities for an alternative perspective on error growth?</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>10:30 - 11:00</td>
+			    <td><b>Coffee break</b></td>
+			  </tr>
+			  <tr>
+			    <td>11:00 - 11:30</td>
+			    <td>Patrick Raanes: <b><a href ="https://github.com/nansencenter/DAPPER" target="_blank">An introduction to Data Assimilation with Python: a Package for Experimental Research (DAPPER)</a></b></td>
+			  </tr>
+			  <tr>
+			    <td>11:30 - 12:50</td>
+			    <td><b>Breakout sessions on the following topics*:</b>
+				<ul style="margin-left: 40px">
+				  <li>Identifying research gaps/opportunities for idealised models</li>
+				  <li>Use of generic frameworks (e.g., DAPPER, PDAF, ...)</li>
+				  <li>Is there an appetite for future meetings for researchers using
+idealised models in (convective-scale) DA research?</li>
+				</ul> 
+				*proposed topics, more welcome!
+			    </td>
+			  </tr>
+			  <tr>
+			    <td>12:50 - 13:00</td>
+			    <td>Closing remarks</b></td>
+			  </tr>
+			  <tr>
+			    <td>13:00 - 14:00</td>
+			    <td><b>Lunch</b></td>
+			  </tr>
+			</table>
+
+			<br>
+
+			<h1>Abstracts</h1>
+			
+			<h4 id="javier">Javier Amezcua: Time structures in the model error of partially resolved dynamical systems</h4>
+
+			<p>Weak-constraint data assimilation eliminates the assumption of perfect model, and allows for the existence of model error. If the model error is independent in different time steps, we find ourselves working with a so-called Markov Hidden Model. A lot of data assimilation theory exists for this case. We show that the presence of unresolved physical processes with time scales "not too far" from the resolved scales renders non-Markovian properties in the model error. We study the time-autocorrelation in the model error and its consequences in the data assimilation process. <a href ="files/workshop/Amezcua.pdf" target="_blank">Slides (PDF; 1.6MB).</a>
+
+
+			<h4 id="ross">Ross Bannister: Introducing the `ABC model' for the efficient study of convective-scale data assimilation techniques</h4>
+
+			<p>Convective-scale assimilation models differ from those at coarser resolutions due to many factors including their high degree of non-linearity. In addition, processes that act on very short timescales feature more at small scales (such as acoustic waves that follow from the compressibility of the equations of motion). These and other factors lead to a potential loss of geostrophic – and possibly hydrostatic – balance at these scales, which may not be adequately accounted for in current operational assimilation systems (especially of the variational type where background error covariances rely on near-balanced motion). The ABC model is a simplified geophysical model developed to enable cost-effective research into data assimilation techniques at convective-scales. It is based on the compressible Euler equations with a number of modifications to allow the model to be integrated using explicit methods and with an affordable timestep. The model is named after three tunable parameters that define the model's flow regime. The model currently has no moisture.
+
+This talk will be a summary of the ABC model's formulation with some example results. It will briefly mention the flexible variational data assimilation system that has been developed to accompany it. <a href ="files/workshop/ABC_Bannister1-Presentation.pdf" target="_blank">Slides (PDF; 2.4MB).</a>
+			<br>
+
+			<h4 id="zak">Zak Bell: Accounting for observation uncertainty due to unresolved scales in data assimilation</h4>
+
+			<p>In numerical weather prediction, data assimilation is used to obtain initial conditions. Data assimilation is a state estimation method, combining observations with numerical models, taking account of their relative uncertainties. A good specification of uncertainty is key in producing accurate forecasts. This presentation examines the effects of assimilating observations into a numerical model with different spatio-temporal scales. In particular, the uncertainty and potential observation bias due to unresolved scales will be considered. We will discuss the Schmidt-Kalman filter that can compensate for error due to unresolved scales. Additionally, the novel use of a bias correction scheme in conjunction with the Schmidt-Kalman filter will be introduced. Through derivation of the true error covariance equation the Schmidt-Kalman filter will be compared with other filters using a random walk model. Our results show the suitability of the Schmidt-Kalman filter for multi-scale filtering. <a href ="files/workshop/zb_pres.pdf" target="_blank">Slides (PDF; 1.0MB).</a> 
+			<br>
+
+			<h4 id="steef">Steef Boeing: Lagrangian modelling of the atmosphere: opportunities for an alternative perspective on error growth?</h4>
+
+			<p>Two Lagrangian models for atmospheric moist convection are introduced, an idealised two-layer system and a Lagrangian fluid dynamical model. The two-layer system is inspired by previous work that parametrised organisation patterns in cloud using cellular automata. The system is Lagrangian as it uses moving parcels to represent both moist air below cloud, and the clouds themselves.The organisation of clouds in the upper layer is driven by the presence of density currents in the lower layer that cause moisture convergence. However, the coupling works in both directions: the density currents themselves are a result of the evaporation of precipitation, and therefore relate to the presence of clouds in the upper layer.
+
+The more realistic Moist Parcel-In-Cell (MPIC) model solves the three-dimensional incompressible Boussinesq equations, incorporating the effects of condensation and evaporation. It also uses parcels to represent both thermodynamical and dynamical variables. MPIC has been used to study the behaviour of individual idealized clouds, and has been validated against Eulerian simulations. Work is in progress to make it suitable for studying moist convection on domains of tens to hundreds of kilometres. The Lagrangian models provide new insights into the origin and dispersion of atmospheric trajectories, and can also be used to study how the development of disturbances translates to spatial uncertainty. Such models could potentially provide new opportunities for data assimilation, and this presentation is meant as a starting point for interactions on this topic.
+			<br>
+
+			<h4 id="luca">Luca Cantarello: An isentropic 1.5-layer version of the ‘modRSW’ model for satellite data assimilation research</h4>
+
+			<p>With the amount of satellite observations constantly on the rise, and new and more precise instruments added to the observing system every year, it’s important to investigate their impact on a data assimilation system, in order to make use of them in a more efficient way. We want to conduct such investigation using the idealised ‘modRSW’ model. We present a series of modifications to be performed to both the model and the assimilation setup in order to make it suitable for such a purpose. <a href ="files/workshop/workshop_talk_isenRSW.pdf" target="_blank">Slides (PDF; 0.6MB).</a>
+			<br>
+
+			<h4 id="alison">Alison Fowler:  Data compression in the presence of correlated observation errors</h4>
+
+			<p>As the resolution of numerical weather prediction (NWP) models increase the need for high-resolution observations to constrain these models also increases. A major hurdle to the assimilation of dense observations in NWP is the presence of non-negligible observation error correlations (OECs). Despite the difficulty in estimating these error correlations, progress is being made, with centres around the world now explicitly accounting for OECs in a variety of observation types. This talk explores how to make efficient use of this potentially dramatic increase in the amount of data available for assimilation. In an idealised framework it is illustrated that as the length-scales of the OECs increase the scales that the analysis is most sensitive to the observations become smaller. This implies that a denser network of observations is more beneficial with increasing OEC length-scales. However, the computational and storage burden associated with such a dense network may not be feasible. To reduce the amount of data, a compression technique based on retaining the maximum information content of the observations can be used. When the OEC length-scales are large (in comparison to the prior error correlations), the data compression will select observations of the smaller scales for assimilation whilst throwing out the larger scale information. In this case it is shown that there is a discrepancy between the observations with the maximum information and those that minimise the analysis error variances. Experiments are performed using the Ensemble Kalman Filter and the Lorenz-1996 model, comparing different forms of data reduction. It is found that as the OEC length-scales increase the assimilation becomes more sensitive to the choice of data reduction technique.  <a href ="files/workshop/FowlerDataCompression.pdf" target="_blank">Slides (PDF; 4.2MB).</a>
+			<br>
+
+			<h4 id="gordon">Gordon Inverarity: modRSW ensemble Kalman filter configuration and tuning</h4>
+
+			<p>During his Ph.D. Tom Kent has developed an ensemble Kalman filter (EnKF) to demonstrate that the modified rotating shallow water equation model can mimic key properties of an operational convective-scale forecast and data assimilation system. Further work has since been done to refine the EnKF components and to tune the resulting setup.  The combination of a deterministic ensemble Kalman filter with self-exclusion, relaxation to prior spread, additive inflation and covariance localisation will be described and results presented using metrics relevant to operational numerical weather prediction. <a href ="files/workshop/gordon_modRSW_enkf.pdf" target="_blank">Slides (PDF; 2.2MB).</a>
+			<br>
+
+			<h4 id="tom">Tom Kent: the modRSW model -- physical basis, numerics, and dynamics</h4>
+			<p> The modRSW model is an idealised fluid model of convective-scale Numerical Weather Prediction, intended for use in inexpensize data assimilation experiments. It is a modification of the rotating shallow water equations that includes some simplified dynamics of cumulus convection and associated precipitation. Despite the non-trivial modifications to the parent equations, it is shown that this shallow water type model remains hyperbolic in character and can be integrated accordingly using a discontinuous Galerkin finite element method for nonconservative hyperbolic systems of partial differential equations. Combined with methods to ensure well-balancedness and non-negativity, the resulting numerical solver is novel, efficient and robust. I will give a brief overview of the model's physical basis, numerics, and distinctive dynamics. In particular, it exhibits important aspects of convective-scale dynamics relating to the disruption of large-scale balance and is able to simulate other features related to convecting and precipitating weather systems.  <a href ="files/workshop/Kent_DAworkshop_may2019.pdf" target="_blank">Slides (PDF; 0.9MB).</a>
+			<br>
+
+			<h4 id="raphael">Raphael Kriegmair: Representing unresolved scales in the modRSW model with a neural network</h4>
+
+			<p>Errors due to unresolved scales and processes remain a major source of uncertainty in numerical weather prediction. Here, we explore the possibility of using artificial neural networks to correct errors in coarse-resolution forecasts. A key problem here is the generation of suitable training data. The current approach involves coarse graining high resolution output from the modRSW model to lower resolutions and comparing the dynamical development in order to simulate the relation between the complex physical system and model truth. Methods so far developed in an idealised research framework using the modRSW model are presented along with preliminary results. Further, the behaviour of the modRSW model in long term simulations is discussed. <a href ="files/workshop/raphael_LeedsDA.pdf" target="_blank">Slides (PDF; 3.1MB).</a>
+			<br>
+
+			<h4 id="patrick">Patrick Raanes: EnKF -- FAQ</h4>
+
+			<p>The ensemble Kalman filter (EnKF) is a data assimilation technique. This talk answers some questions that practitioners of the EnKF may ask, namely:<br>
+  - Regarding its linearizations:<br>
+    * What exactly are they?<br>
+    * Why does this rarely get mentioned?<br>
+    * How does it relate to analytic derivatives?<br>
+ - Regarding its covariances:<br>
+    * Why are the estimates normalized by (N-1)?<br>
+    * Why do we prefer the Kalman gain "form" in the EnKF?<br>
+ - Regarding nonlinear models:<br>
+    * Why does it create sampling error?<br>
+    * Why does it cause divergence?<br>
+The findings are based on two publications:<br>
+  - doi.org/10.1002/qj.3386 / arXiv:1801.08474<br>
+  - doi.org/10.5194/npg-2019-10 / arXiv:1901.06570<br>
+<a href ="files/workshop/EnKF_FAQ.pdf" target="_blank">Slides (PDF; 2.0MB).</a>
+			<br>
+
+			<h4 id="sanita">Sanita Vetra-Carvalho: On the use of an idealised convective column model for ensemble data assimilation</h4> 
+
+			<p>Authors: Sanita Vetra-Carvalho, Nancy K. Nichols, Stefano Migliorini, Sue P. Ballard <b>(Withdrawn)</b>
+
+			<p>We make use of an idealised 1+1D convective scale atmospheric column model with cloud parameterization scheme and discontinuous rain scheme to establish applicability of ensemble square root filter methods (EnSRF) to convective scale models. In particular, we are interested in how well the ensemble can capture the three distinct model regimes: one linear regime when there is no cloud, and two non-linear regimes when cloud is present and later when discontinuous rain scheme is switched on. In this talk we present the description of the dynamical model along with the ensemble results. <a href ="files/workshop/Leeds_May2019_Sanita.pdf" target="_blank">Slides (PDF; 1.0MB).</a>
+			<br>
+
+			<h4 id="ziga">Žiga Zaplotnik:  MADDAM - Moist atmosphere dynamics data assimilation model</h4>
+
+			<p>Authors: Žiga Zaplotnik (1) and Nedjeljka Žagar (2)
+ 
+			<p>(1) University of Ljubljana, Faculty of Mathematics and Physics, Ljubljana, Slovenia<br>
+(2) University of Hamburg, Faculty of Mathematics, Informatics and Natural Sciences, Hamburg, Germany
+ 
+			<p>We present a new Moist Atmosphere Dynamics (MAD) model of intermediate complexity, which simulates the nonlinear interactions between the wind, temperature, aerosols and moisture in 4D-Var. It includes simple but physically based description of condensation, dependence of saturation humidity on temperature, latent heat release and its impact on dynamics, namely on the propagation properties of atmospheric waves. Prognostic equation for the total aerosol mass mixing ratio describes the aerosol external processes: advection, diffusion and wet scavenging by precipitation, which is an aerosol sink. The 4D-Var assimilation applies the incremental approach and uses transformed relative humidity as a control variable. In contrast to the model dynamical variables, which are analyzed in a multivariate fashion using equatorial wave theory, aerosol and moisture data are assimilated univariately, except for moisture data near saturation. 
+ 
+The new model has been applied to study the potential of wind tracing from aerosol data, to assess the idea of flow-dependent wind tracing, to study upscale/downscale error propagation, etc. MADDAM is envisaged to serve as a testbed for new developments in 4D-Var assimilation and a numerical lab for studying the coupling of moisture and inertio-gravity waves in convective-scale data assimilation. <a href ="files/workshop/zaplotnik_maddam.pdf" target="_blank">Slides (PDF; 14.5MB).</a>
+
+
+			</p>
+		</div>
+
+		<div class="col c2">
+			<h3>Organisers:</h3>
+			<p><a href="http://www1.maths.leeds.ac.uk/~amttk/" target="_blank">Tom Kent</a> and <a href="http://www1.maths.leeds.ac.uk/~mmlca/" target="_blank">Luca Cantarello</a></p>
+			<h3>Location:</h3>
+			<p> <a href="http://www.maths.leeds.ac.uk/" target="_blank">School of Mathematics</a>, <a href="http://www.leeds.ac.uk/" target="_blank">University of Leeds</a>, UK.</p>
+			<h3>Contact:</h3>
+			<p>t.kent [at] leeds.ac.uk </p>
+			<p>mmlca [at] leeds.ac.uk </p>
+
+			
+
+		<!--	<h3>Links:</h3>
+			<p><a href="#">Sample link 1</a><br />
+			<a href="#">Sample link 2</a><br />
+			<a href="#">Sample link 3</a></p> -->
+		</div>
+	</div>
+ 
+	<div id="footer" class="row">
+		<div class="col c12 aligncenter">
+			<h3>&copy; 2019 TK and LC (Image: Valparaiso, Chile (TK))</h3>
+			<p><a href="http://andreasviklund.com/templates/origo/">Template design</a> by <a href="http://andreasviklund.com/" target="_blank">Andreas Viklund</a><br />
+		Best hosted at <a href="https://www.svenskadomaner.se/?ref=mall&amp;ling=en" title="Svenska Domäner AB">www.svenskadomaner.se</a></p>
+		</div>
+	</div>
+ </div>
+</body>
+</html>
